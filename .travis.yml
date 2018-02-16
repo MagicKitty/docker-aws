@@ -4,5 +4,16 @@ node_js:
 sudo: required
 services:
   - docker
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $ACCESSKEYID
+  secret_access_key:
+  secure: "$SECRETACCESSKEY"
+  region: "<votre-region>"
+  app: "aws"
+  env: "aws-dev"
+  bucket_name: "<bucket-name>"
+  on:
+  branch: master
 after_deploy:
   - echo "done deploying"
