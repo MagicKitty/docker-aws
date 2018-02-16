@@ -9,10 +9,10 @@ deploy:
   access_key_id: $ACCESSKEYID
   secret_access_key:
   secure: "$SECRETACCESSKEY"
-  region: "<votre-region>"
+  region: "eu-west-3"
   app: "aws"
   env: "aws-dev"
-  bucket_name: "<bucket-name>"
+  bucket_name: "e-hgimjrnmqi"
   on:
   branch: master
 after_deploy:
