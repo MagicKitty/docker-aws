@@ -12,7 +12,7 @@ deploy:
   region: "eu-west-3"
   app: "aws"
   env: "aws-dev"
-  bucket_name: "e-hgimjrnmqi"
+  bucket_name: "elasticbeanstalk-eu-west-3-288221714363"
   on:
   branch: master
 after_deploy:
